@@ -7,3 +7,7 @@ Content developed by: WeCloudData Academy
 ## 1. Business Scenario
 
 You will create a docker container for data process.
+
+## 2. Business Requirements
+
+* Please download the zip file from **EXERCISE FILES**. This is the initial package for you to create such container.
