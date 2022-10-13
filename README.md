@@ -26,3 +26,5 @@ You will create a docker container for data process.
 ## 4. Diagram
 
 The project diagram is as below:
+
+![Docker_lab_Process](https://user-images.githubusercontent.com/108837052/195683771-dee6eafb-d324-4a38-9286-0a766efa2e26.JPG)
