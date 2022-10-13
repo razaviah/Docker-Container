@@ -24,3 +24,5 @@ You will create a docker container for data process.
 6. The python script is ready to use and you don't need to change it. But if you want, you can change the script for your requirements.
 
 ## 4. Diagram
+
+The project diagram is as below:
