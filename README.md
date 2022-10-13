@@ -19,3 +19,5 @@ You will create a docker container for data process.
    * Use the python script to read the data from **input** folder.
    * Write the results data into **output** folder.
 3. The python script is in the container.
+4. The **input** and **output** folder is in the host, in another word, outside the container. What you need to do is to mount the 2 folders from host to the container. 
+5. Try to make container running first, and then run python script. This means when you use **docker run** to start up the container, the python script will not run. The python script only runs when you give container an order with command **docker exec**. 
