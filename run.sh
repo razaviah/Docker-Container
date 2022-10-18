@@ -69,6 +69,9 @@ if [ ${RC1} != 0 ]; then
 	exit 1
 fi
 
+docker stop ${DOCKER_NAME}
+docker rm ${DOCKER_NAME}
+
 echo "PROGRAM SUCCEEDED"
 
 
