@@ -47,10 +47,12 @@ if [ ${RC1} != 0 ]; then
         exit 1
 fi
 
+echo "DOCKER CONTAINER CREATED SUCCESSFULLY"
+
 docker cp ${SCRIPTS_FOLDER}/${PYTHON_SCRIPT_NAME} ${DOCKER_NAME}:/app/${PYTHON_SCRIPT_NAME} 
 docker exec ${DOCKER_NAME} pip3 install pandas
 
-echo "DOCKER CONTAINER CREATED SUCCESSFULLY"
+echo "DOCKER CONTAINER INSTALLED DEPENDENCIES SUCCESSFULLY!"
 
 #########################################################
 # PART 6: RUN SCRIPT
