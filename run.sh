@@ -48,7 +48,6 @@ if [ ${RC1} != 0 ]; then
 fi
 
 docker cp ${SCRIPTS_FOLDER}/${PYTHON_SCRIPT_NAME} ${DOCKER_NAME}:/app/${PYTHON_SCRIPT_NAME} 
-docker exec ${DOCKER_NAME} pip3 install --upgrade pip3 
 docker exec ${DOCKER_NAME} pip3 install pandas
 
 echo "DOCKER CONTAINER CREATED SUCCESSFULLY"
