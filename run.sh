@@ -50,6 +50,7 @@ fi
 echo "DOCKER CONTAINER CREATED SUCCESSFULLY"
 
 docker cp ${SCRIPTS_FOLDER}/${PYTHON_SCRIPT_NAME} ${DOCKER_NAME}:/app/${PYTHON_SCRIPT_NAME} 
+docker exec ${DOCKER_NAME} pip install --upgrade pip
 docker exec ${DOCKER_NAME} pip3 install pandas
 
 echo "DOCKER CONTAINER INSTALLED DEPENDENCIES SUCCESSFULLY!"
