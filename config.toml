@@ -1,0 +1,3 @@
+[run]
+py_script="py_script.py"
+docker_name="dockerLab1"
