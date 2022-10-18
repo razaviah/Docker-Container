@@ -52,19 +52,6 @@ docker exec ${DOCKER_NAME} pip3 install pandas
 
 echo "DOCKER CONTAINER CREATED SUCCESSFULLY"
 
-
-#echo "\nAttaching to the docker container created"
-#docker attach ${DOCKER_NAME}
-
-#RC1=$?
-#if [ ${RC1} != 0 ]; then
-#        echo "SETTING UP DOCKER ENVIRONMENT FAILED"
-#        echo "[ERROR:] RETURN CODE:  ${RC1}"
-#        echo "[ERROR:] REFER TO THE LOG FOR THE REASON FOR THE FAILURE."
-#        exit 1
-# fi
-
-# echo "ATTACHED TO THE CONTAINER SUCCESSFULLY"
 #########################################################
 # PART 6: RUN SCRIPT
 
