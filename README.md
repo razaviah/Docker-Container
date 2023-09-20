@@ -1,30 +1,29 @@
-# Docker Container Project -- Mini Project
+# Docker Container Data Processing Project
 
-## 1. Business Scenario
+## Overview
+This project involves creating a Docker container to handle data processing tasks. The container will read data from an `input` folder, process it using a Python script, and write the results to an `output` folder.
 
-You will create a docker container for data process.
+![Project Diagram](https://user-images.githubusercontent.com/108837052/195683771-dee6eafb-d324-4a38-9286-0a766efa2e26.JPG)
 
-## 2. Business Requirements
+## Business Requirements
+- Download the initial package from the **EXERCISE FILES**.
+- Upload your Dockerfile and the final CSV file to your GitHub repository.
 
-* Please download the zip file from ***EXERCISE FILES***. This is the initial package for you to create such container.
-* Please upload your docker file and final csv to the repository you created in the Github.
+## Technical Specifications
+1. **Project Structure**: The project contains two folders (`input` and `output`) and a Python script.
+2. **Docker Container**: 
+    - Reads data from the `input` folder.
+    - Writes processed data to the `output` folder.
+3. **Python Script**: Located inside the container.
+4. **Folder Mounting**: The `input` and `output` folders are mounted from the host to the container.
+5. **Container Execution**: 
+    - The container starts up without running the Python script.
+    - The Python script is executed using `docker exec`.
 
-## 3. Specification Detail
-1. In the file, there are 2 folders (***input*** and ***output***) and 1 python script. There are 2 csv files (***t1*** and ***t2***) in the input folder.
-2. What you need to do is create a image to generate a container, in the container, you will:
-   * Use the python script to read the data from ***input*** folder.
-   * Write the results data into ***output*** folder.
-3. The python script is in the container.
-4. The ***input*** and ***output*** folder is in the host, in another word, outside the container. What you need to do is to mount the 2 folders from host to the container. 
-5. Try to make container running first, and then run python script. This means when you use ***docker run*** to start up the container, the python script will not run. The python script only runs when you give container an order with command ***docker exec***. 
-6. The python script is ready to use and you don't need to change it. But if you want, you can change the script for your requirements.
+## How to Run
+1. Build the Docker image.
+2. Run the Docker container.
+3. Execute the Python script inside the container using `docker exec`.
 
-## 4. Diagram
-
-The project diagram is as below:
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/108837052/195683771-dee6eafb-d324-4a38-9286-0a766efa2e26.JPG" alt="Docker Container Project Process Diagram"/>
-</p>
-
-
+## Note
+- The Python script is ready to use, but you can modify it to meet specific requirements if needed.
