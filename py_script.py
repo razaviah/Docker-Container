@@ -7,7 +7,6 @@ output_path = "/app/output"
 filename = 'all_years.csv'
 csvs = glob.glob(os.path.join(input_path , "*.csv"))
 
-
 li = []
 for f in csvs:
     df = pd.read_csv(f, index_col=None, header=0)
